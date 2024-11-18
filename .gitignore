@@ -1,0 +1,5 @@
+# Documentos #
+######################
+*.pdf
+*.PDF
+/documentos/muebles/*.jpg
