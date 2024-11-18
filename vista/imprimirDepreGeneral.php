@@ -14,7 +14,7 @@ function Header()
     $this->SetFont('Arial','B',14);
     $this->Ln(1);
     $this->Cell(10,0.5,'',0,0,'L');
-    $this->Cell(5,0.5,utf8_decode('ALCALDIA MUNICIPAL DE SANTA ANA NORTE'),0,0,'C'); $this->Image('../images/LOGO.png' , 23 ,1, 2.1, 1.5,'PNG', '');  
+    $this->Cell(5,0.5,utf8_decode('ALCALDIA MUNICIPAL DE SANTA ANA NORTE'),0,0,'C'); $this->Image('../images/LOGO.png' , 23 ,1, 2.5, 1.7,'PNG', '');  
     $this->Ln(0.6);
     $this->Cell(10,0.5,'',0,0,'L');
     $this->Cell(5,0.5,utf8_decode('ACTIVO FIJO'),0,0,'C'); 
