@@ -61,11 +61,11 @@ function Footer()
     $pdf->SetFillColor(211,211,211);
     $pdf->SetFont('Arial','B',11);
     $pdf->Cell(0.5,0.5,'',0,0,'L');
-    $pdf->Cell(3.5,0.5,utf8_decode('CODIGO'),1,0,'C',1);
-    $pdf->Cell(12,0.5,utf8_decode('DESCRIPCION'),1,0,'C',1);
+    $pdf->Cell(3.5,0.5,utf8_decode('COD'),1,0,'C',1);
+    $pdf->Cell(12,0.5,utf8_decode('DESCRIPCIÓN'),1,0,'C',1);
     $pdf->Cell(2,0.5,utf8_decode('RUBRO'),1,0,'C',1);
     //$pdf->Cell(1,0.5,utf8_decode('AÑO'),1,0,'C',1);
-    $pdf->Cell(2,0.5,utf8_decode('DEP. ANUAL'),1,0,'C',1);
+    $pdf->Cell(2,0.5,utf8_decode('ANUAL'),1,0,'C',1);
     $pdf->Cell(2,0.5,utf8_decode('24199017'),1,0,'C',1);
     $pdf->Cell(2,0.5,utf8_decode('24199019'),1,0,'C',1);
     $pdf->Cell(2,0.5,utf8_decode('24199023'),1,0,'C',1);
