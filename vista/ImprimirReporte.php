@@ -17,7 +17,7 @@ class PDF extends PDF_MC_Table
       $this->Cell(4,0.5,'',0,0,'L');
       $this->MultiCell(17,0.5,utf8_decode('PLANTA DE ASFALTO Y TRITURACIÓN'),0,'C');
       $this->Cell(9,0.5,'',0,0,'L');
-      $this->Cell(7,0.5,'REPORTE SALIDA DE DIESEL',0,0,'C'); $this->Image('../images/Logo2.png' , 24 ,1, 1.7 , 2.3,'PNG', '');    
+      $this->Cell(7,0.5,'REPORTE SALIDA DE DIESEL',0,0,'C'); $this->Image('../images/LOGO.png' , 24 ,1, 1.7 , 2.3,'PNG', '');    
       $this->Ln(0.2);
       $this->Cell(8,0.5,'',0,0,'L');
       $this->Cell(8,0.5,'_____________________________________',0,0,'C');

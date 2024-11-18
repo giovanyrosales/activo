@@ -56,7 +56,7 @@ if (session_start()) {
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><span>Control de Inventario y Activo Fijo</span>&nbsp; Alcald&iacute;a Municipal de Metap&aacute;n</a>
+                    <a class="navbar-brand" href="#"><span>Control de Inventario y Activo Fijo</span>&nbsp; Alcald&iacute;a Municipal de Santa Ana Norte</a>
                     <ul class="user-menu">
                         <li class="dropdown pull-right">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-user-circle"> </span> <?php echo "   " . $_SESSION['sesion4']["nombre"] . " " . $_SESSION['sesion4']["apellido"] . " "; ?><span class="caret"></span></a>

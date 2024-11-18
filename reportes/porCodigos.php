@@ -26,7 +26,7 @@ class PDF extends PDF_MC_Table
         $this->Cell(5,0.5,'',0,0,'L');
         $this->MultiCell(15,0.5,utf8_decode('ALCALDIA MUNICIPAL DE METAPAN'),0,'C');
         $this->Cell(9.5,0.5,'',0,0,'L');
-        $this->Cell(6,0.5,'REPORTE DE CUENTAS CONTABLES',0,0,'C'); $this->Image('../images/Logo2.png' , 24 ,1.5, 1.2 , 1.8,'PNG', '');    
+        $this->Cell(6,0.5,'REPORTE DE CUENTAS CONTABLES',0,0,'C'); $this->Image('../images/LOGO.png' , 24 ,1.5, 1.2 , 1.8,'PNG', '');    
         $this->Ln(0.2);
         $this->Cell(8.5,0.5,'',0,0,'L');
         $this->Cell(8,0.5,'___________________________________',0,0,'C');

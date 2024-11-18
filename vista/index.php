@@ -72,7 +72,7 @@ $usuario = new Usuarios();
 		<!-- /.login-box -->
 		<br>
 		<center>
-			<p style="color: whitesmoke">© 2016 Alcald&iacute;a Municipal de Metap&aacute;n. All Rights Reserved | Giovany Rosales</p>
+			<p style="color: whitesmoke">© 2024 Alcaldía Municipal de Santa Ana Norte. | Unidad de Tecnologías de Información</p>
 		</center>
 		<script src="../js/jquery-1.11.1.min.js"></script>
 		<script src="../js/bootstrap.min.js"></script>
