@@ -47,7 +47,7 @@ if (isset($_POST["fechainicial"]) && isset($_POST["fechafinal"]) && isset($_POST
       $this->MultiCell(12, 0.5, utf8_decode('UNIDAD INVE DE INVENTARIO Y ACTIVO FIJO'), 0, 'C');
       $this->Cell(6, 0.5, '', 0, 0, 'L');
       $this->Cell(7, 0.5, 'REPORTE DE INVENTARIO', 0, 0, 'C');
-      $this->Image('../images/LOGO.png', 17, 1, 2.4, 1.7, 'PNG', '');
+      $this->Image('../images/LOGO.png', 17, 1.5, 2.4, 1.7, 'PNG', '');
       $this->Ln(0.2);
       $this->Cell(5.5, 0.5, '', 0, 0, 'L');
       $this->Cell(8, 0.5, '___________________________________________', 0, 0, 'C');
