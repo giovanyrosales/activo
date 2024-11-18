@@ -1,0 +1,6 @@
+Options -Indexes
+php_value upload_max_filesize 50M
+php_value post_max_size 50M
+php_value max_execution_time 380
+php_value session.cookie_lifetime 15200
+php_value session.gc_maxlifetime 15200
