@@ -15,7 +15,7 @@ function Header()
     $this->SetFont('Arial','B',12);
     $this->Ln(1);
     $this->Cell(7.5,0.5,'',0,0,'L');
-    $this->Cell(5,0.5,utf8_decode('ALCALDIA MUNICIPAL DE METAPÁN'),0,0,'C'); $this->Image('../images/LOGO.png' , 18 ,1, 1.5 , 2,'PNG', '');  
+    $this->Cell(5,0.5,utf8_decode('ALCALDIA MUNICIPAL DE SANTA ANA NORTE'),0,0,'C'); $this->Image('../images/LOGO.png' , 18 ,1, 1.5 , 2,'PNG', '');  
     $this->Ln(0.6);
     $this->Cell(7.5,0.5,'',0,0,'L');
     $this->Cell(5,0.5,utf8_decode('ACTIVO FIJO'),0,0,'C'); 

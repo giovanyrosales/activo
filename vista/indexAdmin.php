@@ -200,7 +200,7 @@ if (session_start()) {
                 </li>
             </ul>
 
-            <div class="attribution"><img src="../images/LOGO 2.png" width="10%"><b><br />ALCALD&Iacute;A MUNICIPAL<br />DE METAP&Aacute;N</b></div>
+            <div class="attribution"><img src="../images/LOGO 2.png" width="10%"><b><br />ALCALD&Iacute;A MUNICIPAL<br />DE SANTA ANA NORTE</b></div>
         </div>
         <!--contenido principal-->
         <!--/.sidebar-->

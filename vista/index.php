@@ -37,7 +37,7 @@ $usuario = new Usuarios();
 					</center>
 					<div class="panel-body">
 						<a href="#">
-							<img src="../images/LOGO.png" alt="Logo Alcaldia Municipal de Metapan" width="160" class="center-block">
+							<img src="../images/LOGO.png" alt="Logo Alcaldia Municipal de Santa Ana Norte" width="160" class="center-block">
 						</a>
 						<br>
 						<form name="form-login" id="loginform" method="post" action="../controlador/validateLogin.php">
