@@ -1066,6 +1066,21 @@ class Bienes extends conexion
 
     public function getMueblesMay900()
     {
+        $query = "SELECT * FROM bien where (tipo =1) AND (estado=1) AND (valor >=900) order by fechacompra DESC";
+        $result = self::$conn->query($query);
+        /* array asociativo */
+        while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+            $rows[] = $row;
+        }
+        return $rows;
+    }
+     /*
+     *   Recupera todos los muebles mayores a 600
+     *
+     */
+
+    public function getMueblesMay600()
+    {
         $query = "SELECT * FROM bien where (tipo =1) AND (estado=1) AND (valor >=600) order by fechacompra DESC";
         $result = self::$conn->query($query);
         /* array asociativo */
