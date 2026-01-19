@@ -12,20 +12,52 @@ class PDF extends PDF_MC_Table
     // Cabecera de página
     public function Header()
     {
-        $this->SetFont('Arial', 'B', 14);
-        $this->Ln(1);
-        $this->Image('../images/elsalvador.png', 1, 1, 2, 2, 'PNG', '');
-        $this->Cell(3.5, 0.5, '', 0, 0, 'L');
-        $this->MultiCell(12, 0.5, utf8_decode('UNIDAD DE INVENTARIO Y ACTIVO FIJO'), 0, 'C');
-        $this->Cell(6, 0.5, '', 0, 0, 'L');
-        $this->Cell(7, 0.5, 'REPORTE DE INVENTARIO', 0, 0, 'C');
-        $this->Image('../images/LOGO.png', 17, 1.5, 2.4, 1.7, 'PNG', '');
-        $this->Ln(0.2);
-        $this->Cell(5.5, 0.5, '', 0, 0, 'L');
-        $this->Cell(8, 0.5, '___________________________________________', 0, 0, 'C');
-        $this->Ln(1.5);
+       // Margen inicial
+    $this->SetY(1);
+    $this->SetFont('Arial', '', 10);
 
-        $this->Cell(1, 0.5, '', 0, 0, 'L');
+    // ====== CONTENEDOR PRINCIPAL ======
+    $this->Rect(1, 1, 19, 3);
+
+    // ====== LOGO IZQUIERDO ======
+    $this->Image('../images/LOGO.png', 1.2, 1.3, 2.2);
+
+    // ====== TITULO CENTRAL ======
+    $this->SetXY(4, 1.4);
+    $this->SetFont('Arial', 'B', 12);
+    $this->MultiCell(
+        9,
+        0.6,
+        utf8_decode("REPORTE DE INVENTARIO DE\nBIENES MUEBLES"),
+        0,
+        'C'
+    );
+
+    // ====== CUADRO DERECHO (CÓDIGO / VERSIÓN / FECHA) ======
+    $this->SetFont('Arial', 'B', 9);
+
+    // Marco derecho
+    $this->Rect(13.2, 1, 6.8, 3);
+
+    // Líneas internas
+    $this->Line(13.2, 2, 20, 2);
+    $this->Line(13.2, 2.7, 20, 2.7);
+
+    // Texto izquierdo
+    $this->SetXY(13.3, 1.2);
+    $this->Cell(3.2, 0.6, utf8_decode('Código:'), 0, 0, 'L');
+    $this->Cell(3.4, 0.6, 'INVE-006-REPO', 0, 1, 'L');
+
+    $this->SetX(13.3);
+    $this->Cell(3.2, 0.6, utf8_decode('Versión:'), 0, 0, 'L');
+    $this->Cell(3.4, 0.6, '000', 0, 1, 'L');
+
+    $this->SetX(13.3);
+    $this->Cell(3.2, 0.6, utf8_decode('Fecha de vigencia:'), 0, 0, 'L');
+    $this->Cell(3.4, 0.6, '22/10/2025', 0, 1, 'L');
+
+    // ====== SALTO PARA CONTENIDO ======
+    $this->Ln(1.5);
     }
 
     public function Footer()
