@@ -31,10 +31,7 @@ class PDF extends PDF_MC_Table
 
     // Logo
     $this->Image('../images/LOGO.png', 1.4, 1.3, 2.2);
-   
-    // División logo / título
-    $this->Line(4, 1, 4, 4);
-    
+
     // Título central
     $this->SetFont('Arial', 'B', 14);
     $this->SetXY(4, 1.6);
@@ -71,7 +68,7 @@ class PDF extends PDF_MC_Table
 
     // Fecha
     $this->SetXY(13.2, 3.25);
-    $this->Cell(3, 0.6, utf8_decode('Fecha de vigencia:'), 0, 0, 'L');
+    $this->Cell(3, 0.6, utf8_decode("Fecha de\nvigencia:"), 0, 0, 'L');
     $this->Cell(3.6, 0.6, '22/10/2025', 0, 0, 'C');
 
     // Espacio para el contenido
