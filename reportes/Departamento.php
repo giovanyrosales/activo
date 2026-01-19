@@ -12,52 +12,72 @@ class PDF extends PDF_MC_Table
     // Cabecera de página
     public function Header()
     {
-       // Margen inicial
+        // Posición inicial
     $this->SetY(1);
     $this->SetFont('Arial', '', 10);
 
-    // ====== CONTENEDOR PRINCIPAL ======
+    // ===== CONTENEDOR GENERAL =====
     $this->Rect(1, 1, 19, 3);
 
-    // ====== LOGO IZQUIERDO ======
-    $this->Image('../images/LOGO.png', 1.2, 1.3, 2.2);
+    // ===== DIVISIÓN VERTICAL GENERAL (IZQ / DER) =====
+    $this->Line(13, 1, 13, 4);
 
-    // ====== TITULO CENTRAL ======
-    $this->SetXY(4, 1.4);
-    $this->SetFont('Arial', 'B', 12);
+    // ===============================
+    // BLOQUE IZQUIERDO
+    // ===============================
+
+    // División logo / título
+    $this->Line(4, 1, 4, 4);
+
+    // Logo
+    $this->Image('../images/LOGO.png', 1.4, 1.3, 2.2);
+
+    // Texto institucional bajo logo
+    $this->SetFont('Arial', 'B', 8);
+    $this->SetXY(1.1, 3.3);
+    $this->MultiCell(2.8, 0.4, utf8_decode("SANTA ANA NORTE\nEL SALVADOR"), 0, 'C');
+
+    // Título central
+    $this->SetFont('Arial', 'B', 14);
+    $this->SetXY(4, 1.6);
     $this->MultiCell(
         9,
-        0.6,
+        0.8,
         utf8_decode("REPORTE DE INVENTARIO DE\nBIENES MUEBLES"),
         0,
         'C'
     );
 
-    // ====== CUADRO DERECHO (CÓDIGO / VERSIÓN / FECHA) ======
-    $this->SetFont('Arial', 'B', 9);
+    // ===============================
+    // BLOQUE DERECHO
+    // ===============================
 
-    // Marco derecho
-    $this->Rect(13.2, 1, 6.8, 3);
+    // Líneas horizontales
+    $this->Line(13, 2, 20, 2);
+    $this->Line(13, 3, 20, 3);
 
-    // Líneas internas
-    $this->Line(13.2, 2, 20, 2);
-    $this->Line(13.2, 2.7, 20, 2.7);
+    // División columna etiqueta / valor
+    $this->Line(16.2, 1, 16.2, 4);
 
-    // Texto izquierdo
-    $this->SetXY(13.3, 1.2);
-    $this->Cell(3.2, 0.6, utf8_decode('Código:'), 0, 0, 'L');
-    $this->Cell(3.4, 0.6, 'INVE-006-REPO', 0, 1, 'L');
+    $this->SetFont('Arial', 'B', 10);
 
-    $this->SetX(13.3);
-    $this->Cell(3.2, 0.6, utf8_decode('Versión:'), 0, 0, 'L');
-    $this->Cell(3.4, 0.6, '000', 0, 1, 'L');
+    // Código
+    $this->SetXY(13.2, 1.25);
+    $this->Cell(3, 0.6, utf8_decode('Código:'), 0, 0, 'L');
+    $this->Cell(3.6, 0.6, 'INVE-006-REPO', 0, 0, 'C');
 
-    $this->SetX(13.3);
-    $this->Cell(3.2, 0.6, utf8_decode('Fecha de vigencia:'), 0, 0, 'L');
-    $this->Cell(3.4, 0.6, '22/10/2025', 0, 1, 'L');
+    // Versión
+    $this->SetXY(13.2, 2.25);
+    $this->Cell(3, 0.6, utf8_decode('Versión:'), 0, 0, 'L');
+    $this->Cell(3.6, 0.6, '000', 0, 0, 'C');
 
-    // ====== SALTO PARA CONTENIDO ======
-    $this->Ln(1.5);
+    // Fecha
+    $this->SetXY(13.2, 3.25);
+    $this->Cell(3, 0.6, utf8_decode('Fecha de vigencia:'), 0, 0, 'L');
+    $this->Cell(3.6, 0.6, '22/10/2025', 0, 0, 'C');
+
+    // Espacio para el contenido
+    $this->Ln(2);
     }
 
     public function Footer()
