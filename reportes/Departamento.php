@@ -31,12 +31,10 @@ class PDF extends PDF_MC_Table
 
     // Logo
     $this->Image('../images/LOGO.png', 1.4, 1.3, 2.2);
-
-    // Texto institucional bajo logo
-    $this->SetFont('Arial', 'B', 8);
-    $this->SetXY(1.1, 3.3);
-    $this->MultiCell(2.8, 0.4, utf8_decode("SANTA ANA NORTE\nEL SALVADOR"), 0, 'C');
-
+   
+    // División logo / título
+    $this->Line(4, 1, 4, 4);
+    
     // Título central
     $this->SetFont('Arial', 'B', 14);
     $this->SetXY(4, 1.6);
