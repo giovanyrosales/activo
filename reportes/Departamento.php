@@ -53,23 +53,22 @@ class PDF extends PDF_MC_Table
 
     // División columna etiqueta / valor
     $this->Line(16.2, 1, 16.2, 4);
-
     $this->SetFont('Arial', 'B', 10);
 
     // Código
     $this->SetXY(13.2, 1.25);
-    $this->Cell(3, 0.6, utf8_decode('Código:'), 0, 0, 'L');
-    $this->Cell(3.6, 0.6, 'INVE-006-REPO', 0, 0, 'C');
+    $this->Cell(3.6, 0.6, utf8_decode('Código:'), 0, 0, 'L');
+    $this->Cell(3, 0.6, 'INVE-006-REPO', 0, 0, 'C');
 
     // Versión
     $this->SetXY(13.2, 2.25);
-    $this->Cell(3, 0.6, utf8_decode('Versión:'), 0, 0, 'L');
-    $this->Cell(3.6, 0.6, '000', 0, 0, 'C');
+    $this->Cell(3.6, 0.6, utf8_decode('Versión:'), 0, 0, 'L');
+    $this->Cell(3, 0.6, '000', 0, 0, 'C');
 
     // Fecha
     $this->SetXY(13.2, 3.25);
-    $this->Cell(3, 0.6, utf8_decode("Fecha de\nvigencia:"), 0, 0, 'L');
-    $this->Cell(3.6, 0.6, '22/10/2025', 0, 0, 'C');
+    $this->Cell(3.6, 0.6, utf8_decode("Fecha de\nvigencia:"), 0, 0, 'L');
+    $this->Cell(3, 0.6, '22/10/2025', 0, 0, 'C');
 
     // Espacio para el contenido
     $this->Ln(2);
